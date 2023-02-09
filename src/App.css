@@ -1,38 +1,91 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Teko&display=swap');
+.Container{
   text-align: center;
+  height: 100vh;
+  background: linear-gradient(rgb(52, 83, 95),oldlace);
+  background-size: cover;
+  font-family: 'Teko', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:4rem;
+  width: 100%;
+  background-color: rgb(27, 63, 77);
+  position: sticky;
+  top: 0;
+  color: azure;
+  z-index: 100;
+}
+
+.navbar img{
+  width: 70px;
+  margin: 0.5rem;
+
+}
+.fi{
+  width: 25em;
+  height: 25em;
+  margin: 0.5rem;
+}
+
+.options{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.correct{
+  color:darkolivegreen;
+}
+.inCorrect{
+  color: darkred;
+}
+.btn{
+  margin: 0.3rem;
+  padding:0.3rem 0.8rem ;
+  background: linear-gradient(rgb(175, 235, 235),rgb(232, 156, 232));
+  border: 2px solid darkslategray;
+  border-radius: 5px 10px;
+  font-weight: bolder;
+  transition: 0.2s;
+  box-shadow: 10px 5px 5px darkslategray;
+}
+.btn:hover{
+  margin: 0.3rem;
+  padding:0.3rem 0.8rem ;
+  background: linear-gradient(rgb(232, 156, 232),rgb(175, 235, 235));
+  border: 2px solid darkslategray;
+  border-radius: 5px 10px;
+  font-weight: bolder;
+  transform:scale(1.1);
 }
 
-.App-link {
-  color: #61dafb;
+.Scoreboard{
+  font-weight: bolder;
+  font-family: 'Abril Fatface', cursive;
+  color: rgb(2, 2, 48);
+}
+.correctAnswer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 1rem;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+  .fi{
+    width: 15em;
+    height: 15em;
   }
-  to {
-    transform: rotate(360deg);
+  .options{
+    flex-direction: column;
+  }
+  .Container{
+    height: 100%;
   }
 }

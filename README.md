@@ -1,3 +1,7 @@
+## Web Veiw:
+![header image](https://raw.github.com/Rohitpanti/Game-of-Flags/master/View.png)
+![header image](https://raw.github.com/Rohitpanti/Game-of-Flags/master/View2.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
